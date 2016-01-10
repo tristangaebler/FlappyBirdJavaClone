@@ -41,6 +41,9 @@ public class ShaderUtils {
 		glLinkProgram(program);
 		glValidateProgram(program);
 		
+		glDeleteShader(vertID);
+		glDeleteShader(fragID);
+		
 		return program;
 	}
 }
